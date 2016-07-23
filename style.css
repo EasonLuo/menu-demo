@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+nav ul{
+	list-style-type:none;
+	padding:0px;
+	font-size:20px;
+	
+}
+
+nav ul li a{
+	text-decoration:none;
+}
+
+nav>ul>li{
+    float:left;
+    position:relative;
+}
+
+nav>ul>li>a{
+	display:inline-block;
+	padding:5px 15px;
+}
+
+nav>ul>li .dropdown{
+	display:none;
+}
+
+nav>ul>li:hover ul.dropdown{
+	display:block;
+	position:absolute;
+	top:100%;
+	width:120%;
+	left:0px;
+}
+
+nav>ul>li:hover ul.dropdown>li>a{
+	display:inline-block;
+	padding:5px 15px;
+}
+
+nav ul li a:hover{
+	color:#FFF;
+	background-color:#000;
+}
